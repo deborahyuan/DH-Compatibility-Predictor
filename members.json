@@ -1,0 +1,86 @@
+{
+  "team": [
+    {
+      "name": "Eddie",
+      "attributes": {
+        "intelligence": 4,
+        "problemSolving": 2,
+        "collaboration": 3,
+        "reliability": 1,
+        "communication": 9
+      }
+    },
+    {
+      "name": "Will",
+      "attributes": {
+        "intelligence": 9,
+        "problemSolving": 5,
+        "collaboration": 4,
+        "reliability": 5,
+        "communication": 10
+      }
+    },
+    {
+      "name": "Mike",
+      "attributes": {
+        "intelligence": 7,
+        "problemSolving": 4,
+        "collaboration": 3,
+        "reliability": 5,
+        "communication": 4
+      }
+    },
+    {
+      "name": "Luke",
+      "attributes": {
+        "intelligence": 8,
+        "problemSolving": 4,
+        "collaboration": 3,
+        "reliability": 1,
+        "communication": 4
+      }
+    }
+  ],
+  "applicants": [
+    {
+      "name": "John",
+      "attributes": {
+        "intelligence": 7,
+        "problemSolving": 5,
+        "collaboration": 3,
+        "reliability": 1,
+        "communication": 4
+      }
+    },
+    {
+      "name": "Jane",
+      "attributes": {
+        "intelligence": 6,
+        "problemSolving": 8,
+        "collaboration": 6,
+        "reliability": 5,
+        "communication": 5
+      }
+    },
+    {
+      "name": "Joe",
+      "attributes": {
+        "intelligence": 8,
+        "problemSolving": 4,
+        "collaboration": 3,
+        "reliability": 5,
+        "communication": 4
+      }
+    },
+    {
+      "name": "Deborah",
+      "attributes": {
+        "intelligence": 7,
+        "problemSolving": 5,
+        "collaboration": 3,
+        "reliability": 8,
+        "communication": 7
+      }
+    }
+  ]
+}
