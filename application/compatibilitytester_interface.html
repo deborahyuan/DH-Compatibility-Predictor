@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JSON Input/Output Example</title>
+    <title>Compatibility Predictor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>JSON Input/Output Example</h1>
-    
-    <form>
-      <label for="jsonInput">Choose a JSON file to input:</label>
-      <input type="file" id="jsonInput" accept=".json">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="text-center">
+    <h1>Compatibility Predictor</h1>
+    <h2>This compatibility predictor was created to help Datahouse 
+    select the best applicants to <br> join its team based on the applicant's compatibility with the existing team.<br>
+    <br>
+  To begin, upload a JSON file in the proper format or use the sample 'members.json' file, <br> which can be found <a href="https://github.com/deborahyuan/DH-Compatibility-Predictor/blob/main/members.json" target="_blank">here</a> for download. </h2>
+  <h2> After your JSON file has been uploaded, click the "Process JSON" button below to <br>calculate the compatibility of the applicants.</h2>  
+  <form>
+      <label for="jsonInput" class="custom-file-upload">
+        <i class="fa fa-cloud-upload"></i> Choose JSON file to upload
+    </label>
+    <input id="jsonInput" type="file" accept=".json"/>
     </form>
 
-    <br>
-
+  
     <button onclick="processJson()">Process JSON</button>
 
-    <br><br>
 
-    <label for="jsonOutput">JSON Output:</label>
-    <textarea id="jsonOutput" rows="10" cols="50"></textarea>
+    <h2>This JSON Output shows the list of applicants, along with their respective compatibility scores. <br>The applicants are listed from highest to lowest compatibility.</h2>
+    <textarea readonly id="jsonOutput" rows="10" cols="50"></textarea>
 
     <script>
       function processJson() {
@@ -208,9 +221,12 @@ function scoreApplicants(members) {
 
   
     </script>
+<br>
+<br>
+<br>
+<button type="button" onclick="downloadJson()">Download Applicant Compatibility JSON</button>
 
-<button type="button" onclick="downloadJson()">Download JSON</button>
-
+<!-- used chatGPT to find out how to create a downloadable JSON file -->
 <script type="text/javascript">
   function downloadJson() {
     let data = document.getElementById("jsonOutput").value;
@@ -225,6 +241,8 @@ function scoreApplicants(members) {
     link.click();
   }
 </script>
+</div>
+<br>
+</body>
 
-  </body>
 </html>
