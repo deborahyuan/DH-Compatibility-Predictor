@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('DataHouse_modified_logo.png');
+    background-image: url('DataHouse_modified_logo.png'); /* this picture was modified from the original, which can be found here https://www.datahouse.com/wp-content/uploads/2016/09/Datahouseshare.jpg */
     background-repeat: no-repeat;
     background-position: top center;
     background-size: fill;
